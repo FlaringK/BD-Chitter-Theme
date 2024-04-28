@@ -1,7 +1,7 @@
 /**
  * @name Chitter Theme
  * @author FlaringK
- * @version 0.1.0
+ * @version 0.2.0
  * @description Highly customizable theme for BetterDiscord.
  * @source https://github.com/FlaringK/BD-Chitter-Theme
  * @website https://flaringk.github.io
@@ -24,6 +24,8 @@
     --trollpink: #d819d5;
     --trolldullpink: #650b73;
     --trolldark: #040429;
+
+    --trollBluewhite: #949ba4;
 }
 
 @font-face {
@@ -89,7 +91,8 @@
     top: -1px;
 }
 
-.username_d30d99 + .username_d30d99::before {
+.username_d30d99 + .username_d30d99::before,
+.iconContainer_d0200f + .content__945f5 .username__4a6f7::before {
     display: none;
 }
 
@@ -132,6 +135,12 @@
 }
 
 /* PROFILE TAB ICONS */
+
+.profilePanel_e2cafe {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
 .avatarWrapper__0cd44 {
     scale: 1.48;
     transform: translate(2px, 4px);
@@ -155,8 +164,15 @@
     clip-path: var(--hexagon);
 }
 
+.userPanelOuter_df01a5 {
+    padding: 5px;
+}
+
 .userPopoutOuter__3884e, 
-.userPopoutInner_e90432 {
+.userProfileOuter__35e59,
+.userPopoutInner_e90432,
+.userProfileInner__8ff35,
+.userPanelOuter_df01a5 {
     clip-path: polygon(
         50px 0%, 
         calc(100% - 50px) 0%, 
@@ -177,7 +193,7 @@
     background-color: transparent;
 }
 
-.userPopoutInner_e90432:before {
+.userPopoutInner_e90432:before, .userProfileInner__8ff35 {
     background-color: transparent;
     background-image: url(https://file.garden/X1htvgJ0DEp_tp-Z/discordfontsource/SP.046.0004.png);
     background-position: 50% 120%;
@@ -359,14 +375,13 @@ div[aria-label="Servers"] .listItem__48528:nth-of-type(even) .pill__6b31b {
     justify-content: center;
 
     background-image: 
-        linear-gradient(0deg, 
-        transparent 35%, 
-        var(--trollgreen) 50%, 
-        transparent 65%);
+        linear-gradient(90deg, var(--background-secondary), transparent, var(--background-secondary)),
+        linear-gradient(0deg, transparent 35%, var(--trollgreen) 50%, transparent 65%);
 }
 
 .name__27f04 .overflow__993fa {
     background-color: var(--background-secondary);
+    box-shadow: 0 0 2px var(--background-secondary);
     padding: 0 0.5em;
 }
 
@@ -381,8 +396,8 @@ div[aria-label="Servers"] .listItem__48528:nth-of-type(even) .pill__6b31b {
     --background-tertiary: var(--trolldark);
     --__header-bar-background: var(--trolldark);
     
-    --header-primary: var(--trollpink);
-    --header-secondary: var(--trollpink);
+    --header-primary: var(--trollBluewhite);
+    --header-secondary: var(--trollBluewhite);
     --channel-icon: var(--trollpink);
     --interactive-normal: var(--trollpink);
     --channels-default: var(--trollpink);
@@ -454,12 +469,6 @@ div[aria-label="Servers"] .listItem__48528:nth-of-type(even) .pill__6b31b {
         30px 10px,
         10px 25px);
 }
-
-
-
-
-
-
 
 ul.content__690c5 {
     background-color: var(--trolldark);
@@ -594,6 +603,11 @@ ol.scrollerInner__37fee .username_d30d99::after {
         0% 100%);
 }
 
+.threadMessageAccessory_ef0459 .username__0b0e7::after,
+.threadMessageAccessory_ef0459 .username__0b0e7::before {
+    display: none;
+}
+
 ol.scrollerInner__37fee .username__0b0e7,
 ol.scrollerInner__37fee .username_d30d99 {
     -webkit-text-stroke: 1px white;
@@ -676,6 +690,8 @@ ol.scrollerInner__37fee .username_d30d99 {
         0% calc(100% - 15px), 
         0% 15px);
     margin-left: 10px;
+
+    --channels-default: var(--trollBluewhite);
 }
 
 .members__573eb {
@@ -766,3 +782,9 @@ ol.scrollerInner__37fee .username_d30d99 {
 .emoji {
     filter: drop-shadow(0 0 0px currentColor);
 }
+
+/* COLOUR MESSAGES MAYBE */
+
+/* .sidebar_e031be:has(.privateChannels__9b518) + .chat__52833 {
+    background-color: rebeccapurple;
+} */
