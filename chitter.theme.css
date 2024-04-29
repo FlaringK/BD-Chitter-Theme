@@ -1,7 +1,7 @@
 /**
  * @name Chitter Theme
  * @author FlaringK
- * @version 0.2.0
+ * @version 0.2.1
  * @description Highly customizable theme for BetterDiscord.
  * @source https://github.com/FlaringK/BD-Chitter-Theme
  * @website https://flaringk.github.io
@@ -780,7 +780,7 @@ ol.scrollerInner__37fee .username_d30d99 {
 /* EMOJIS FOR CUSTOM TRANSPARENT EMOJIES */
 
 .emoji {
-    filter: drop-shadow(0 0 0px currentColor);
+    filter: drop-shadow(0 0 0px currentColor) drop-shadow(0 0 0px currentColor) drop-shadow(0 0 0px currentColor) drop-shadow(0 0 0px currentColor) drop-shadow(0 0 0px currentColor) drop-shadow(0 0 0px currentColor);
 }
 
 /* COLOUR MESSAGES MAYBE */
