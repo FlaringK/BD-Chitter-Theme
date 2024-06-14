@@ -1,7 +1,7 @@
 /**
  * @name Chitter Theme
  * @author FlaringK
- * @version 0.2.2
+ * @version 0.2.3
  * @description Highly customizable theme for BetterDiscord.
  * @source https://github.com/FlaringK/BD-Chitter-Theme
  * @website https://flaringk.github.io
@@ -290,7 +290,7 @@
     --background-secondary: var(--blood);
 }
 
-.wrapper__9916c .wrapper__8436d {
+.wrapper__9916c .wrapper_a6f950 {
     scale: 0.9;
     clip-path: var(--hexagon);
     background-color: var(--bloodAcc);
