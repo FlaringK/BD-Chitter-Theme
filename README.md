@@ -1,5 +1,4 @@
-This project isn't being updated anymore, I apologise but updating it every time discord updates is a sysiphian task that I am not up too lmao. Ideally it is just the class names of the css that need to be updated, because those change every time discord recomplies the app, but there might be something more fundamental. Sorry Gang
-
+This project has been saved by [This class updater](https://syndishanx.github.io/Website/Update_Classes.html). If using this theme breaks at any point, try running it through this site. If things are still broken I will look into it
 
 # BD-Chitter-Theme
 A Theme for betterDiscord vaguely based on Chitter from Homestuck
